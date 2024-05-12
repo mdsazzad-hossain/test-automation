@@ -1,0 +1,21 @@
+#! /bin/bash
+
+echo "Hello sir i am working"
+
+url=$(git config --get remote.origin.url)
+
+if [ ! -z "$url" ] 
+then
+	echo "going forward"
+	echo "$url"
+	git add .
+	git commit -m "script done"
+	git push origin master
+	echo "Branch name: master"
+	echo "Push done"
+	exit
+else
+	git remote add origin https://github.com/mdsazzad-hossain/automate-script.git
+	exit
+	echo 'stop'
+fi
