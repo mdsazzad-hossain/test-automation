@@ -16,7 +16,7 @@ then
 	echo "Push done"
 	exit
 else
-	git remote add origin https://github.com/mdsazzad-hossain/automate-script.git
+	git remote add origin https://github.com/mdsazzad-hossain/test-automation.git
 	exit
 	echo 'stop'
 fi
