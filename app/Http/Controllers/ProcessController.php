@@ -40,6 +40,6 @@ class ProcessController extends Controller
         \Log::info($output);
  
         // Return a response to the user
-        return response("Script executed successfully!");
+        return response("Git push successfully!");
     }
 }

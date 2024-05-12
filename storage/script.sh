@@ -8,7 +8,8 @@ if [ ! -z "$url" ]
 then
 	echo "going forward"
 	echo "$url"
-	git add .
+	git status
+	git add --all
 	git commit -m "script done"
 	git push origin master
 	echo "Branch name: master"
